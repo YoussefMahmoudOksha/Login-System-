@@ -145,11 +145,9 @@ void Register()
     if(!CheckName(inf.name) && !CheckGmail(inf.gmail))
     {
         Registration<<endl;
-        Registration<< "Name: " <<inf.name<<endl;
-        Registration<< "Gmail: " <<inf.gmail<<endl;
-        Registration<< "Phone: " <<inf.phone<<endl;
+        Registration<<inf.name<< ' ' <<inf.gmail<< ' '<<inf.phone<< ' ';
     }
-    Registration<< "Password: ";
+
     for (int i = 0; i < 8; i++)
     {
         Registration<<inf.password[i];
